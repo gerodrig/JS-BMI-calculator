@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <title>BMI tool</title>
+</head>
+<body>
+  <div>
+    <h2 class="calc-header">BMI tool</h2>
+    <form>
+      Nombre: 
+      <br>
+      <input type="text" name="Name" placeholder="Ingresa Nombre" class="name">
+      <br>
+      Altura:
+      <br>
+      <input type="text" name="height" placeholder="Ingresa Altura" class="height">
+      <br>
+      Peso:
+      <br>
+      <input type="text" name="weight" placeholder="Ingresa Peso" class="weight">
+        <br> 
+        Fecha:
+        <br>
+        <input type="date" value="" name="date" class="date" id="datePicker">
+      </form>
+      <input type="button" value="Calcular BMI" class="button">
+    </form> 
+  </div>
+  <div>
+    <h1 id="result">Aqui va el resultado</h1>
+  </div>
+  <div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <canvas id="line-chart" width="800" height="450"></canvas>    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
